@@ -4,6 +4,7 @@
   "description": "A learning web project to explore and apply modern CSS Flexbox",
   "main": "index.js",
   "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/main.css -w",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/main.css --output-style compressed",
